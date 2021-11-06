@@ -11,10 +11,10 @@ y = int(input("Zadejte počet řádků hracího pole:"))
 while y < 1:
     y = int(input("Počet řádků musí být kladné číslo, zkuste to znovu:"))
 
-STRANA_CTVERCE = 60
-speed(0)
 #Kreslení čtvercové mřížky prostřednictvím tří for cyklů. První for cyklus udává počet řádků.
 #Druhý cyklus udává počet sloupců a třetí cyklus (vnitřní) kreslí jednotlivé čtverce.
+STRANA_CTVERCE = 30
+speed(0)
 for _ in range(y):
     for _ in range (x):
         for _ in range(4):
