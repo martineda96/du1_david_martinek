@@ -1,0 +1,8 @@
+David Martínek  GEKA 3. ročník  5.11.2021
+
+Program du1 slouží k simulaci hry TIC-TAC-TOE. Hráči mají možnost zvolit si vlastní herní přezdívku a velikost hrací plochy. Volba hrací plochy (počet sloupců a řádků) je ošetřena tak, že program sám skončí při nezadání celého čísla. V případě zadání celého nekladného čísla jsou hráči uvrženi do nekonečného cyklu, z nějž se lze dostat pouze zadáním kladného celého čísla. Délka hrany políčka hrací plochy je programem pevně stanovena na 30.
+Síť je vykreslena prostřednictvím želví grafiky za využití tří v sobě vložených for cyklů. Vnitřní cyklus.prostřednictvím želvy kreslí čtverec, střední cyklus želvu nutí nakreslit řádek a vnější cyklus skládá řádky nad sebe a tvoří tak sloupce.
+Hráči se v tazích střídají, přičemž tahů mají jen dohromady omezený počet (hra skončí po odehrání tolika tahů, kolik má hrací plocha políček). Hráči zadávají souřadnice políček, do kterých chtějí umístit svou značku. Želva se prostřednictvím příkazu setpos(x,y) přesune do příslušného políčka a v místě danou značku nakreslí. Program neumí zabránit hráčům v nakreslení značky do již použitého políčka a stejně tak neumí vyhodnotit vítěze celé hry, za to však dokáže hráčům zakázat kreslení značek mimo herní plochu.
+
+Program sám o sobě je i přes svou značnou jednoduchost nepraktický. Například při hře na hrací ploše o velikosti 10x10 mají hráči prostor odehrát 100 tahů. Snadno se tak stane, že některý z nich (kupříkladu na šedesátém tahu) nechtěně zadá do políčka pro souřadnici neplatný typ pro zadávanou proměnnou (str, float...), čímž celá hra předčasně skončí k neradosti jejích uživatelů.
+
